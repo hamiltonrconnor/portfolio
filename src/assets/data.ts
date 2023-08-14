@@ -34,7 +34,7 @@ export interface CardType {
     "id":1,
     "title": "BirdGang - Unity Game Project",
     "body" : "Developed a 3D browser based game using the Unity game engine. Resulting in a 1st class mark and feedback that the project was “judged as outstanding by the panel entering truly professional territory”.",
-    "imgUrl" : "./public/docs/assets/images/birdgang.png" ,
+    "imgUrl" : "docs/assets/images/birdgang.png" ,
     "readMoreLink":" https://hamiltonrconnor.github.io/BirdGang/",
     category: [Category.Gaming]
 }

@@ -24,6 +24,8 @@ function App() {
    const updateFilter = (filters:Array<Category>) => {
      setFilter(filters);
    };
+
+   
   
  
 

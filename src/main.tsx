@@ -4,6 +4,8 @@ import App from './App.tsx'
 import './index.css'
 import { DarkModeProvider } from './utilities/darkModeContext.tsx'
 
+
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <DarkModeProvider>

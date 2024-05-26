@@ -1,0 +1,41 @@
+.custom-border {
+    animation: warp linear;
+    animation-timeline: scroll();
+    border-radius: 54% 46% 41% 59% / 56% 45% 55% 44%;
+
+
+}
+
+.topbar-border1 {
+    border-radius: 10% 90% 8% 92% / 91% 10% 90% 9%
+}
+
+.topbar-border2 {
+    border-radius: 5% 23% 10% 11% / 22% 21% 14% 10%
+}
+
+
+
+@keyframes warp {
+
+    0% {
+
+        border-radius: 54% 46% 41% 59% / 56% 45% 55% 44%;
+
+
+    }
+
+    50% {
+
+        border-radius: 33% 67% 67% 33% / 59% 52% 48% 41%
+    }
+
+
+
+
+
+    100% {
+
+        border-radius: 54% 46% 41% 59% / 56% 45% 55% 44%
+    }
+}

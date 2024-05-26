@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Vergil';
+    src: local('Vergil'), url(./fonts/Virgil.woff2) format('woff2');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}

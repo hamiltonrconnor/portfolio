@@ -69,7 +69,7 @@ function App() {
         <div className="px-5 flex max-w-fit gap-5 justify-between">
           <div className='w-1/2 flex flex-col justify-between'>
 
-            <p className='p-2  text-stone-600 font-extrabold font-mono text-3xl'>I am a PhD Student at the University of Canterbury.  I graduated from the University of Bristol having achieved a First Class Master's of Engineering in Computer Science.</p>
+            <p className='p-2  text-stone-600 font-extrabold font-mono text-3xl dark:text-white'>I am a PhD Student at the University of Canterbury.  I graduated from the University of Bristol having achieved a First Class Master's of Engineering in Computer Science.</p>
             <div className='w-full flex flex-row items-center p-1'>
               <img className="flex-1  w-1/3 p-1" src='docs/assets/images/UniOfCanterbury_Logo.png'></img>
               <img className="flex-1  w-1/3 p-1" src='docs/assets/images/University_of_Bristol_logo.svg.png'></img>
@@ -80,7 +80,7 @@ function App() {
 
 
           <div className='w-1/2 p-auto'>
-            <h1 className='font-vergil text-4xl'>What I'm interested in? </h1>
+            <h1 className='font-vergil text-4xl dark:text-white'>What I'm interested in? </h1>
             <img className="font-vergil grow-0 object-contain" src="docs/assets/images/StickyNotes.png"></img>
           </div>
         </div>

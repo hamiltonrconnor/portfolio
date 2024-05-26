@@ -1,16 +1,15 @@
 
-import { useEffect, useRef } from "react";
+
 
 
 type Props = {
-    aboutPos: number
-    projectPos: number
-    aboutSection: React.MutableRefObject<null>
-    projectSection: React.MutableRefObject<null>
+
+    aboutSection: React.MutableRefObject<HTMLElement | null>
+    projectSection: React.MutableRefObject<HTMLElement | null>
 }
 
 
-const TopBar = ({ aboutPos, projectPos, aboutSection, projectSection }: Props) => {
+const TopBar = ({ aboutSection, projectSection }: Props) => {
 
 
 
@@ -28,7 +27,7 @@ const TopBar = ({ aboutPos, projectPos, aboutSection, projectSection }: Props) =
                         <button className=""
                             onClick={() =>
                                 window.scrollTo({
-                                    top: aboutSection.current.offsetTop,
+                                    top: aboutSection.current!.offsetTop,
                                     behavior: "smooth"
                                 })
                             }>
@@ -41,7 +40,7 @@ const TopBar = ({ aboutPos, projectPos, aboutSection, projectSection }: Props) =
                         <button
                             onClick={() =>
                                 window.scrollTo({
-                                    top: projectSection.current.offsetTop,
+                                    top: projectSection.current!.offsetTop,
                                     behavior: "smooth"
                                 })
                             }

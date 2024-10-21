@@ -26,11 +26,10 @@ function App() {
   const updateFilter = (filters: Array<Category>) => {
     setFilter(filters);
   };
-  const projectRef = document.getElementById("Projects");
-  const aboutRef = document.getElementById("AboutMe");
-  const aboutSection = useRef(aboutRef);
-  const projectSection = useRef(projectRef);
 
+
+  const projectSection = useRef<HTMLElement | null>(null);
+  const aboutSection = useRef<HTMLElement | null>(null);
 
 
 
@@ -62,9 +61,9 @@ function App() {
           </div>
         </div>
 
-        <div id={"AboutMe"} >
+        <section ref={aboutSection} id={"AboutMe"} >
           <Title title="About Me" sub_title="" title_inderline={true} />
-        </div>
+        </section>
 
         <div className="px-5 flex max-w-fit gap-5 justify-between">
           <div className='w-1/2 flex flex-col justify-between'>
@@ -80,14 +79,14 @@ function App() {
 
 
           <div className='w-1/2 p-auto'>
-            <h1 className='font-vergil text-4xl dark:text-white'>What I'm interested in? </h1>
-            <img className="font-vergil grow-0 object-contain" src="docs/assets/images/StickyNotes.png"></img>
+
+            <img className="font-vergil grow-0 object-contain" src="docs/assets/images/3Dprinter.svg"></img>
           </div>
         </div>
 
-        <div id={"Projects"} >
+        <section ref={projectSection} id={"Projects"} >
           < Title title="Projects" sub_title="" title_inderline={true} />
-        </div>
+        </section>
         <div className="  relative sm:z-0 sm:flex   ">
           <div className=" grid justify-items-center sm:pl-2 ">
             <div>

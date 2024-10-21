@@ -36,8 +36,13 @@ const TopBar = ({ aboutSection, projectSection }: Props) => {
                 <div className="hover:-translate-y-1">
                     <div className="m-1 border-3 border-slate-900 bg-white topbar-border2 drop-shadow-hard-md dark:bg-slate-800">
                         <button
-                            onClick={() =>
-                                projectSection.current?.scrollIntoView({ behavior: 'smooth' })
+
+                            onClick={() => {
+                                console.log(projectSection.current?.scrollTop)
+                                window.scrollTo({ top: projectSection.current?.getBoundingClientRect().top, behavior: "smooth" })
+                            }
+
+
                             }
 
                         >

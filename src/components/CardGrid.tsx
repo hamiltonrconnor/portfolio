@@ -15,8 +15,8 @@ const CardGrid = ({ filters }: Props) => {
   const ColorList = ["bg-pastel-red", "bg-pastel-green", "bg-pastel-yellow", "bg-pastel-orange", "bg-pastel-blue"]
 
   const PickColor = (key: number) => {
-
-    return ColorList[key];
+    let repeatKey = key % ColorList.length
+    return ColorList[repeatKey];
   }
 
   return (

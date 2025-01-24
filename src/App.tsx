@@ -4,9 +4,9 @@
 import { useContext, useState } from 'react';
 import './App.css'
 
-import CardGrid from './components/CardGrid'
+// import CardGrid from './components/CardGrid'
 import Title from './components/Title'
-import NavBar from './components/NavBar';
+// import NavBar from './components/NavBar';
 import TopBar from './components/TopBar';
 
 import { Category } from './assets/data';
@@ -17,23 +17,23 @@ import { DarkModeContextType } from './@types/context';
 
 
 import { useRef } from "react";
-import Contact from './components/Contact';
-import Block from './components/Block';
+// import Contact from './components/Contact';
+// import Block from './components/Block';
 import AltBlock from './components/AltBlock';
 
 
 function App() {
   const { darkMode } = useContext(DarkModeContext) as DarkModeContextType
   const categories: Array<Category> = Object.values(Category);
-  const [filters, setFilter] = useState<Array<Category>>(categories);
-  const updateFilter = (filters: Array<Category>) => {
-    setFilter(filters);
-  };
+  // const [filters, setFilter] = useState<Array<Category>>(categories);
+  // const updateFilter = (filters: Array<Category>) => {
+  //   setFilter(filters);
+  // };
 
 
   const projectSection = useRef<HTMLElement | null>(null);
   const aboutSection = useRef<HTMLElement | null>(null);
-  const contactSection = useRef<HTMLElement | null>(null);
+  // const contactSection = useRef<HTMLElement | null>(null);
 
 
 

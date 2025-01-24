@@ -1,7 +1,7 @@
 
 
 
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import './App.css'
 
 import Pdf from '../public/docs/assets/Documents/Connor Hamilton CV .pdf';
@@ -26,7 +26,7 @@ import AltBlock from './components/AltBlock';
 
 function App() {
   const { darkMode } = useContext(DarkModeContext) as DarkModeContextType
-  const categories: Array<Category> = Object.values(Category);
+  // const categories: Array<Category> = Object.values(Category);
   // const [filters, setFilter] = useState<Array<Category>>(categories);
   // const updateFilter = (filters: Array<Category>) => {
   //   setFilter(filters);

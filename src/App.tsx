@@ -11,7 +11,7 @@ import Title from './components/Title'
 // import NavBar from './components/NavBar';
 import TopBar from './components/TopBar';
 
-import { Category } from './assets/data';
+// import { Category } from './assets/data';
 
 import { DarkModeContext } from './utilities/darkModeContext';
 import { DarkModeContextType } from './@types/context';
@@ -126,8 +126,8 @@ function App() {
               </ol>
 
 
-              <h1 className='p-8 font-vergil text-3xl'>For more  details checkout my CV
-                < a className="text-sky-500 hover:text-sky-300" href={Pdf} rel="noopener noreferrer" target="_blank"> here.</a>
+              <h1 className='p-8 font-vergil text-2xl'>For further details checkout my CV
+                < a className="text-sky-500 hover:text-sky-300" href={Pdf} rel="noopener noreferrer" target="_blank"> here</a>.
               </h1>
 
               {/* <div className=''>

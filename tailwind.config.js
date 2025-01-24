@@ -33,7 +33,11 @@ export default {
         '6': '6px',
       }
     }, fontFamily: {
-      "vergil": ["Vergil"]
+      "vergil": ["Vergil"],
+      "raleway": ["Raleway"],
+      "playfair": ["Playfair"],
+      "quicksand": ["Quicksand"]
+
     }
 
   },

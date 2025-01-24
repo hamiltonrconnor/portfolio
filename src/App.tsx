@@ -4,6 +4,8 @@
 import { useContext, useState } from 'react';
 import './App.css'
 
+import Pdf from '../public/docs/assets/Documents/Connor Hamilton CV .pdf';
+
 // import CardGrid from './components/CardGrid'
 import Title from './components/Title'
 // import NavBar from './components/NavBar';
@@ -122,6 +124,12 @@ function App() {
                 </li>
 
               </ol>
+
+
+              <h1 className='p-8 font-vergil text-3xl'>For more  details checkout my CV
+                < a className="text-sky-500 hover:text-sky-300" href={Pdf} rel="noopener noreferrer" target="_blank"> here.</a>
+              </h1>
+
               {/* <div className=''>
                 <div></div>
                 <Block company='Wearables for Physiotherapy' job_title='PhD Position' dates="April 2024 to March 2025" skills={["Python"]}>

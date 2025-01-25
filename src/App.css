@@ -43,3 +43,24 @@
         border-radius: 54% 46% 41% 59% / 56% 45% 55% 44%
     }
 }
+
+.mask1 {
+    -webkit-mask-image: url(../public/docs/assets/images/Pattern6.png);
+    mask-image: url(../public/docs/assets/images/Pattern6.png);
+
+
+}
+
+.mask2 {
+    -webkit-mask-image: url(../public/docs/assets/images/Pattern7.png);
+    mask-image: url(../public/docs/assets/images/Pattern7.png);
+
+
+}
+
+.mask3 {
+    -webkit-mask-image: url(../public/docs/assets/images/Pattern8.png);
+    mask-image: url(../public/docs/assets/images/Pattern8.png);
+
+
+}

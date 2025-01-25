@@ -10,6 +10,7 @@ import Pdf from '../public/docs/assets/Documents/Connor Hamilton CV .pdf';
 import Title from './components/Title'
 // import NavBar from './components/NavBar';
 import TopBar from './components/TopBar';
+import ProjectBlock from './components/ProjectBlock';
 
 // import { Category } from './assets/data';
 
@@ -32,14 +33,16 @@ function App() {
   //   setFilter(filters);
   // };
 
-
+  const experienceSection = useRef<HTMLElement | null>(null);
   const projectSection = useRef<HTMLElement | null>(null);
   const aboutSection = useRef<HTMLElement | null>(null);
   // const contactSection = useRef<HTMLElement | null>(null);
 
 
 
+
   return (
+
 
 
 
@@ -52,7 +55,7 @@ function App() {
         <div className=' bg-[linear-gradient(to_right,#78716C0a_1px,transparent_1px),linear-gradient(to_bottom,#78716C0a_1px,transparent_1px)] bg-[size:25px_25px] '>
           <div className='flex justify-center '>
             <div className='w-full max-w-5xl'>
-              <TopBar aboutSection={aboutSection} projectSection={projectSection} />
+              <TopBar aboutSection={aboutSection} projectSection={projectSection} experinceSection={experienceSection} />
 
 
 
@@ -91,7 +94,7 @@ function App() {
                   <img className="font-vergil grow-0 object-contain" src="docs/assets/images/3Dprinter.svg"></img>
                 </div>
               </div>
-              <section ref={projectSection} id={"Experience"} >
+              <section ref={experienceSection} id={"Experience"} >
                 < Title title="Experience" sub_title="" title_inderline={true} />
               </section>
               <ol className=' relative mx-8 border-l-4 border-stone-300 '>
@@ -130,6 +133,13 @@ function App() {
                 < a className="text-sky-500 hover:text-sky-300" href={Pdf} rel="noopener noreferrer" target="_blank"> here</a>.
               </h1>
 
+              <section ref={projectSection} id={"Projects"} >
+                <Title title="Projects" sub_title="" title_inderline={true} />
+              </section>
+
+
+
+
               {/* <div className=''>
                 <div></div>
                 <Block company='Wearables for Physiotherapy' job_title='PhD Position' dates="April 2024 to March 2025" skills={["Python"]}>
@@ -153,6 +163,42 @@ function App() {
 
                 </Block>
               </div> */}
+              <div className='px-8 flex flex-row flex-wrap '>
+
+                <ProjectBlock title="BirdGang" sub_tile='Group Games Project' skills={["C#", "Unity", "Github Actions"]} bg_color="bg-pastel-blue" left_side={true}>
+                  <p className='font-quicksand pt-4'>Developed a 3D browser based game using the Unity game engine. Resulting in a 1st class mark and feedback that the project was “judged as outstanding by the panel entering truly professional territory”.
+                    As the lead programmer I was responsible for:
+                    <ul className="list-disc list-outside mx-4 ">
+                      <li>Establishing ways of working that allowed effective group collaboration. For example, a vertical slice approach(ensuring that an individual could develop a new feature), creating an environment for open sharing of feedback and weekly sprints. </li>
+                      <li>Overseeing all of the sub-teams to ensure that systems would integrate efficiently.</li>
+                      <li>Providing “hands on” assistance and advice to individuals to debug and solve problems.  </li>
+                    </ul>
+                  </p>
+                </ProjectBlock>
+
+                <ProjectBlock title="Giant Inflatable Hugging Robots" sub_tile='Master’s thesis' skills={[]} bg_color="bg-pastel-red" left_side={true}>
+                  <p className='font-quicksand pt-4'> Creating 6ft plus inflatable robots is an emerging research area. These robots are powered by bouncy castle blowers and by opening valves, pressure chambers are filled causing the robot to move. I identified a gap within the existing research and applied a user-centric approach to investigating hugging interactions with these robots.
+                    Key project achievements:
+                    <ul className="list-disc list-outside mx-4 ">
+                      <li>Feedback for the project commented that I worked in “uncharted territory” and this work could “be part of a published paper”.</li>
+                      <li> Developed a low-cost low-pressure pneumatic joint system controlled using a custom 3D printed valves.</li>
+                    </ul>
+                  </p>
+                </ProjectBlock>
+
+
+
+
+                {/* <div className='w-full h-64 col-span-3 bg-pastel-red rounded-2xl'>
+
+                </div>
+
+                <div className=' w-full h-64 col-span-3 bg-pastel-green rounded-2xl'>
+
+                </div> */}
+              </div>
+
+
 
 
 

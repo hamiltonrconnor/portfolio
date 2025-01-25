@@ -1,6 +1,6 @@
 
 
-
+import { useState } from "react";
 import { useContext } from 'react';
 import './App.css'
 
@@ -10,6 +10,7 @@ import Pdf from '../public/docs/assets/Documents/Connor Hamilton CV .pdf';
 import Title from './components/Title'
 // import NavBar from './components/NavBar';
 import TopBar from './components/TopBar';
+import ProjectBlock from './components/ProjectBlock';
 
 // import { Category } from './assets/data';
 
@@ -17,11 +18,12 @@ import { DarkModeContext } from './utilities/darkModeContext';
 import { DarkModeContextType } from './@types/context';
 
 
-
 import { useRef } from "react";
 // import Contact from './components/Contact';
 // import Block from './components/Block';
 import AltBlock from './components/AltBlock';
+
+import useWindowDimensions from './utilities/useWindowDimensions'
 
 
 function App() {
@@ -32,14 +34,23 @@ function App() {
   //   setFilter(filters);
   // };
 
-
+  const experienceSection = useRef<HTMLElement | null>(null);
   const projectSection = useRef<HTMLElement | null>(null);
   const aboutSection = useRef<HTMLElement | null>(null);
   // const contactSection = useRef<HTMLElement | null>(null);
 
+  const [showResults, setShowResults] = useState(false)
+  const onClick = () => setShowResults(!showResults)
+
+
+  const { width } = useWindowDimensions();
+
+
+
 
 
   return (
+
 
 
 
@@ -52,7 +63,7 @@ function App() {
         <div className=' bg-[linear-gradient(to_right,#78716C0a_1px,transparent_1px),linear-gradient(to_bottom,#78716C0a_1px,transparent_1px)] bg-[size:25px_25px] '>
           <div className='flex justify-center '>
             <div className='w-full max-w-5xl'>
-              <TopBar aboutSection={aboutSection} projectSection={projectSection} />
+              <TopBar aboutSection={aboutSection} projectSection={projectSection} experinceSection={experienceSection} />
 
 
 
@@ -91,7 +102,7 @@ function App() {
                   <img className="font-vergil grow-0 object-contain" src="docs/assets/images/3Dprinter.svg"></img>
                 </div>
               </div>
-              <section ref={projectSection} id={"Experience"} >
+              <section ref={experienceSection} id={"Experience"} >
                 < Title title="Experience" sub_title="" title_inderline={true} />
               </section>
               <ol className=' relative mx-8 border-l-4 border-stone-300 '>
@@ -130,6 +141,13 @@ function App() {
                 < a className="text-sky-500 hover:text-sky-300" href={Pdf} rel="noopener noreferrer" target="_blank"> here</a>.
               </h1>
 
+              <section ref={projectSection} id={"Projects"} >
+                <Title title="Projects" sub_title="" title_inderline={true} />
+              </section>
+
+
+
+
               {/* <div className=''>
                 <div></div>
                 <Block company='Wearables for Physiotherapy' job_title='PhD Position' dates="April 2024 to March 2025" skills={["Python"]}>
@@ -153,6 +171,84 @@ function App() {
 
                 </Block>
               </div> */}
+              <div className='px-8 flex flex-row flex-wrap gap-x-4 justify-center'>
+
+                <ProjectBlock title="BirdGang" sub_tile='Group Games Project' skills={["C#", "Unity", "Github Actions"]} bg_color="bg-pastel-blue" left_side={true}>
+                  <p className='font-quicksand pt-4'>Developed a 3D browser based game using the Unity game engine. Resulting in a 1st class mark and feedback that the project was “judged as outstanding by the panel entering truly professional territory”.
+                    As the lead programmer I was responsible for:
+                    <ul className="list-disc list-outside mx-4 ">
+                      <li>Establishing ways of working that allowed effective group collaboration. For example, a vertical slice approach(ensuring that an individual could develop a new feature), creating an environment for open sharing of feedback and weekly sprints. </li>
+                      <li>Overseeing all of the sub-teams to ensure that systems would integrate efficiently.</li>
+                      <li>Providing “hands on” assistance and advice to individuals to debug and solve problems.  </li>
+                    </ul>
+                  </p>
+                </ProjectBlock>
+
+                <ProjectBlock title="Giant Inflatable Hugging Robots" sub_tile='Master’s thesis' skills={[]} bg_color="bg-pastel-red" left_side={false}>
+                  <p className='font-quicksand pt-4'> Creating 6ft plus inflatable robots is an emerging research area. These robots are powered by bouncy castle blowers and by opening valves, pressure chambers are filled causing the robot to move. I identified a gap within the existing research and applied a user-centric approach to investigating hugging interactions with these robots.
+                    Key project achievements:
+                    <ul className="list-disc list-outside mx-4 ">
+                      <li>Feedback for the project commented that I worked in “uncharted territory” and this work could “be part of a published paper”.</li>
+                      <li> Developed a low-cost low-pressure pneumatic joint system controlled using a custom 3D printed valves.</li>
+                    </ul>
+                  </p>
+                </ProjectBlock>
+
+                <ProjectBlock title="Biologically plausible deep learning library" sub_tile='' skills={["Python", "Numpy", "Machine Learning"]} bg_color="bg-pastel-green" left_side={true}>
+                  <p className='font-quicksand pt-4'>
+                    Traditional machine learning methods have little evidence of biological plausibility. I wrote a library following the scikit-learn conventions that implement the backpropagation, asynchronous backpropagation, feedback alignment and weight mirroring algorithms for training neural networks. These algorithms are able to successfully classify the Fashion_MNIST dataset.
+                  </p>
+                </ProjectBlock>
+
+
+
+                {showResults || width < 1024 ?
+
+                  <ProjectBlock title="Device energy modelling" sub_tile='' skills={["Java", "Springboot", "React", "Tailwindcss", "Github Actions"]} bg_color="bg-pastel-orange" left_side={false}>
+                    <p className='font-quicksand pt-4'>
+                      Working with DIMPACT (a collaboration between the University of Bristol and Carnstone consultancy), I and three other students developed a more sophisticated end-user device energy model to support carbon reduction strategies using an Agile methodology.
+                      My personal key achievements within this project:
+                      <ul className="list-disc list-outside mx-4 ">
+                        <li>Implementing a CI/CD pipeline using AWS and GitHub Actions allowing the team to deploy automatically tested code quickly.</li>
+                        <li>Led the development of the Backend Springboot API including the implementation of a concurrent request system that reduced response time from over 20 seconds to a fraction of a second.</li>
+                      </ul>
+
+
+                    </p>
+                  </ProjectBlock> : <></>}
+                {showResults || width < 1024 ?
+                  <ProjectBlock title="Audio genre classification with PyTorch" sub_tile='' skills={["Python", "Numpy", "Machine Learning", "PyTorch"]} bg_color="bg-pastel-purple" left_side={true}>
+                    <p className='font-quicksand pt-4'>
+                      Working in a small team, we explored how using pre-trained deep convolutional neural networks like DenseNet can be applied to audio spectrograms and compared the genre classification performance to much shallower networks. This improved testing accuracy from 63% to 78%.",
+                    </p>
+                  </ProjectBlock>
+                  : <></>}
+                {width > 1024 ?
+                  <button className='p-8 font-vergil text-2xl hover:text-stone-600 hover:underline' onClick={onClick}>
+                    {showResults ?
+                      <p>Hide projects</p> :
+                      <p>See more projects</p>
+                    }
+
+
+
+                  </button> : <></>
+                }
+                {/* <h1>{fullConfig.theme.screens.md}</h1> */}
+
+
+
+
+                {/* <div className='w-full h-64 col-span-3 bg-pastel-red rounded-2xl'>
+
+                </div>
+
+                <div className=' w-full h-64 col-span-3 bg-pastel-green rounded-2xl'>
+
+                </div> */}
+              </div>
+
+
 
 
 

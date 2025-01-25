@@ -22,6 +22,7 @@ export default {
         "pastel-blue": "#a5d8ff",
         "pastel-yellow": "#ffec99",
         "pastel-orange": "#ffd8a8",
+        "pastel-purple": "#d0bfff",
         "cream": "#fdf8f6"
       },
       borderWidth: {

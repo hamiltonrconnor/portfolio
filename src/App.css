@@ -14,6 +14,10 @@
     border-radius: 5% 23% 10% 11% / 22% 21% 14% 10%
 }
 
+.topbar-border3 {
+    border-radius: 81% 19% 84% 16% / 25% 81% 19% 75%
+}
+
 
 
 @keyframes warp {

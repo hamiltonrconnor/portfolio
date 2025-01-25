@@ -30,7 +30,7 @@ const TopBar = ({ aboutSection, projectSection, experinceSection }: Props) => {
                                 aboutSection.current?.scrollIntoView({ behavior: 'smooth' });
                             }
                             }>
-                            <h2 className="  py-2 px-4 text-3xl font-extrabold font-vergil text-stone-600 hover:text-red-300 dark:text-white  ">About Me</h2>
+                            <h2 className="  py-2 px-4 text-3xl font-extrabold font-vergil text-stone-600 hover:text-pastel-red dark:text-white  ">About Me</h2>
                         </button>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const TopBar = ({ aboutSection, projectSection, experinceSection }: Props) => {
                             }
 
                         >
-                            <h2 className="py-2 px-4 text-3xl font-extrabold font-vergil  text-stone-600 hover:text-sky-300 dark:text-white  ">Experience</h2>
+                            <h2 className="py-2 px-4 text-3xl font-extrabold font-vergil  text-stone-600 hover:text-pastel-blue dark:text-white  ">Experience</h2>
                         </button>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ const TopBar = ({ aboutSection, projectSection, experinceSection }: Props) => {
                             }
 
                         >
-                            <h2 className="py-2 px-4 text-3xl font-extrabold font-vergil  text-stone-600 hover:text-sky-300 dark:text-white  ">Projects</h2>
+                            <h2 className="py-2 px-4 text-3xl font-extrabold font-vergil  text-stone-600 hover:text-pastel-green dark:text-white  ">Projects</h2>
                         </button>
                     </div>
                 </div>

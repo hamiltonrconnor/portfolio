@@ -45,7 +45,7 @@ const ProjectBlock = (props: Props) => {
                             </div>
                         </div>
 
-                        <div className={"grow text-md font-bold text-stone-600 ease-in hidden lg:block  px-3 "} >
+                        <div className={"grow text-md font-semibold text-stone-600 ease-in hidden lg:block  px-3 "} >
                             {props.children}
 
                         </div>

@@ -219,7 +219,7 @@ function App() {
                 {showResults || width < 1024 ?
                   <ProjectBlock title="Audio genre classification with PyTorch" sub_tile='' skills={["Python", "Numpy", "Machine Learning", "PyTorch"]} bg_color="bg-pastel-purple" left_side={true}>
                     <p className='font-quicksand pt-4'>
-                      Working in a small team, we explored how using pre-trained deep convolutional neural networks like DenseNet can be applied to audio spectrograms and compared the genre classification performance to much shallower networks. This improved testing accuracy from 63% to 78%.",
+                      Working in a small team, we explored how using pre-trained deep convolutional neural networks like DenseNet can be applied to audio spectrograms and compared the genre classification performance to much shallower networks. This improved testing accuracy from 63% to 78%.
                     </p>
                   </ProjectBlock>
                   : <></>}

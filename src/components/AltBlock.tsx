@@ -25,8 +25,8 @@ const AltBlock = (props: Props) => {
 
                 </div>
                 <div className="relative flex flex-row gap-x-2 items-center py-2"   >
-                    <h1 className="font-bold self-end text-stone-400 ">{props.dates} </h1>
-                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-stone-600 border-2 border-stone-300 hover:bg-stone-200    rounded-lg text-sm px-1 py-1 text-center inline-flex items-center " type="button" onClick={onClick}>
+                    <h1 className="font-bold self-end text-stone-400 shrink ">{props.dates} </h1>
+                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="flex-none text-stone-600 border-2 border-stone-300 hover:bg-stone-200    rounded-lg text-sm px-1 py-1 text-center inline-flex items-center " type="button" onClick={onClick}>
                         <p className="pr-1">More Details</p>
                         {showResults ?
 

@@ -7,7 +7,9 @@ type Props = {
     sub_tile: string,
     skills: string[],
     bg_color: string,
+    bg_color_plus: string,
     children?: React.ReactNode,
+    mask: string
 
 }
 
@@ -16,32 +18,43 @@ const ProjectBlock = (props: Props) => {
 
     return (
 
+        <div className={props.bg_color + " w-64 lg:w-full h-64 rounded-3xl overflow-hidden"} >
+            < div className={" relative"}>
 
-        <div className={(props.left_side ? "flex-row " : "flex-row-reverse ") + props.bg_color + " w-64 lg:w-full my-2  rounded-3xl flex  justfy-end justify-between h-64 "}>
-            <div className={(props.left_side ? "border-r-0 lg:border-r-3 " : "border-r-0 lg:border-l-3 ") + "w-64 flex-none border-r-3  border-cream "}>
-                <h1 className="px-4 pt-2 font-bold text-2xl ">{props.title}</h1>
-                <h1 className="px-4  text-stone-600 text-lg ">{props.sub_tile}</h1>
-
-                <div className=" px-4 flex flex-row  flex-wrap  gap-x-2 pr-8 py-2">
-                    {props.skills.map((item) => (<div className="font-quicksand bg-white px-2 border-2 border-gray-900 rounded my-1 ">{item}</div>))}
+                <div className="absolute  inset-0 blur-md opacity-20  ">
+                    <div className={props.mask + "  rounded-3xl "}>
+                        <div className="  ">
+                            <div className={"w-64 h-64 lg:w-full " + props.bg_color_plus}></div>
 
 
+                        </div>
+
+                    </div>
                 </div>
-            </div>
+                <div className="absolute inset-0  w-64 lg:w-full h-64 ">
+                    <div className={(props.left_side ? "flex-row " : "flex-row-reverse ") + "rounded-3xl " + " w-64 lg:w-full   flex justfy-end justify-between h-64  z-10"}>
 
-            <div className={"grow text-md   ease-in hidden lg:block py-2 px-3"} >
-                {props.children}
+                        <div className={(props.left_side ? "border-r-0 lg:border-r-3 " : "border-r-0 lg:border-l-3 ") + "w-64 flex-none  border-cream  "}>
+                            <h1 className="px-4 pt-2 font-bold text-2xl ">{props.title}</h1>
+                            <h1 className="px-4  text-stone-600 text-lg ">{props.sub_tile}</h1>
 
-            </div>
-
-
-
-
-
+                            <div className=" px-4 flex flex-row  flex-wrap  gap-x-2 pr-8 py-2">
+                                {props.skills.map((item) => (<div className="font-quicksand bg-white px-2 border-2 border-gray-900 rounded my-1 ">{item}</div>))}
 
 
+                            </div>
+                        </div>
+
+                        <div className={"grow text-md font-bold text-stone-600 ease-in hidden lg:block  px-3 "} >
+                            {props.children}
+
+                        </div>
+
+                    </div >
+                </div>
 
 
+            </div >
         </div >
 
 

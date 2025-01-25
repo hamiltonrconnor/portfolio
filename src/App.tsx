@@ -171,10 +171,10 @@ function App() {
 
                 </Block>
               </div> */}
-              <div className='px-8 flex flex-row flex-wrap gap-x-4 justify-center'>
+              <div className='px-8 flex flex-row flex-wrap gap-4 justify-center'>
 
-                <ProjectBlock title="BirdGang" sub_tile='Group Games Project' skills={["C#", "Unity", "Github Actions"]} bg_color="bg-pastel-blue" left_side={true}>
-                  <p className='font-quicksand pt-4'>Developed a 3D browser based game using the Unity game engine. Resulting in a 1st class mark and feedback that the project was “judged as outstanding by the panel entering truly professional territory”.
+                <ProjectBlock mask="mask1" title="BirdGang" sub_tile='Group Games Project' skills={["C#", "Unity", "Github Actions"]} bg_color="bg-pastel-blue" bg_color_plus="bg-blue-500" left_side={true}>
+                  <p className='font-quicksand pt-2'>Developed a 3D browser based game using the Unity game engine. Resulting in a 1st class mark and feedback that the project was “judged as outstanding by the panel entering truly professional territory”.
                     As the lead programmer I was responsible for:
                     <ul className="list-disc list-outside mx-4 ">
                       <li>Establishing ways of working that allowed effective group collaboration. For example, a vertical slice approach(ensuring that an individual could develop a new feature), creating an environment for open sharing of feedback and weekly sprints. </li>
@@ -184,8 +184,8 @@ function App() {
                   </p>
                 </ProjectBlock>
 
-                <ProjectBlock title="Giant Inflatable Hugging Robots" sub_tile='Master’s thesis' skills={[]} bg_color="bg-pastel-red" left_side={false}>
-                  <p className='font-quicksand pt-4'> Creating 6ft plus inflatable robots is an emerging research area. These robots are powered by bouncy castle blowers and by opening valves, pressure chambers are filled causing the robot to move. I identified a gap within the existing research and applied a user-centric approach to investigating hugging interactions with these robots.
+                <ProjectBlock mask="mask2" title="Giant Inflatable Hugging Robots" sub_tile='Master’s thesis' skills={[]} bg_color="bg-pastel-red" bg_color_plus="bg-red-500" left_side={false}>
+                  <p className='font-quicksand pt-2'> Creating 6ft plus inflatable robots is an emerging research area. These robots are powered by bouncy castle blowers and by opening valves, pressure chambers are filled causing the robot to move. I identified a gap within the existing research and applied a user-centric approach to investigating hugging interactions with these robots.
                     Key project achievements:
                     <ul className="list-disc list-outside mx-4 ">
                       <li>Feedback for the project commented that I worked in “uncharted territory” and this work could “be part of a published paper”.</li>
@@ -194,8 +194,8 @@ function App() {
                   </p>
                 </ProjectBlock>
 
-                <ProjectBlock title="Biologically plausible deep learning library" sub_tile='' skills={["Python", "Numpy", "Machine Learning"]} bg_color="bg-pastel-green" left_side={true}>
-                  <p className='font-quicksand pt-4'>
+                <ProjectBlock mask="mask3" title="Biologically plausible deep learning library" sub_tile='' skills={["Python", "Numpy", "Machine Learning"]} bg_color="bg-pastel-green" bg_color_plus="bg-green-500" left_side={true}>
+                  <p className='font-quicksand pt-2'>
                     Traditional machine learning methods have little evidence of biological plausibility. I wrote a library following the scikit-learn conventions that implement the backpropagation, asynchronous backpropagation, feedback alignment and weight mirroring algorithms for training neural networks. These algorithms are able to successfully classify the Fashion_MNIST dataset.
                   </p>
                 </ProjectBlock>
@@ -204,8 +204,8 @@ function App() {
 
                 {showResults || width < 1024 ?
 
-                  <ProjectBlock title="Device energy modelling" sub_tile='' skills={["Java", "Springboot", "React", "Tailwindcss", "Github Actions"]} bg_color="bg-pastel-orange" left_side={false}>
-                    <p className='font-quicksand pt-4'>
+                  <ProjectBlock mask="mask1" title="Device energy modelling" sub_tile='' skills={["Java", "Springboot", "React", "Tailwindcss", "Github Actions"]} bg_color="bg-pastel-orange" bg_color_plus="bg-orange-500" left_side={false}>
+                    <p className='font-quicksand pt-2'>
                       Working with DIMPACT (a collaboration between the University of Bristol and Carnstone consultancy), I and three other students developed a more sophisticated end-user device energy model to support carbon reduction strategies using an Agile methodology.
                       My personal key achievements within this project:
                       <ul className="list-disc list-outside mx-4 ">
@@ -217,8 +217,8 @@ function App() {
                     </p>
                   </ProjectBlock> : <></>}
                 {showResults || width < 1024 ?
-                  <ProjectBlock title="Audio genre classification with PyTorch" sub_tile='' skills={["Python", "Numpy", "Machine Learning", "PyTorch"]} bg_color="bg-pastel-purple" left_side={true}>
-                    <p className='font-quicksand pt-4'>
+                  <ProjectBlock mask="mask3" title="Audio genre classification with PyTorch" sub_tile='' skills={["Python", "Numpy", "Machine Learning", "PyTorch"]} bg_color="bg-pastel-purple" bg_color_plus="bg-violet-500" left_side={true}>
+                    <p className='font-quicksand pt-2'>
                       Working in a small team, we explored how using pre-trained deep convolutional neural networks like DenseNet can be applied to audio spectrograms and compared the genre classification performance to much shallower networks. This improved testing accuracy from 63% to 78%.
                     </p>
                   </ProjectBlock>

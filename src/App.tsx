@@ -76,6 +76,9 @@ function App() {
                       <img className="m-10 border-4 custom-border border-slate-900  drop-shadow-hard object-cover h-64 w-64" src='docs/assets/images/HeadShot.jpeg'></img>
                     </div>
                   </div>
+                  <div>
+                    <p className="text-stone-600 font-quicksand text-xl  p-8">Get in contact via hamiltonrconnor@gmail.com or <a href="https://www.linkedin.com/in/hamitonrconnor/" className="text-blue-500 hover:text-blue-300 ">Linkedin</a></p>
+                  </div>
 
                 </div>
               </section>

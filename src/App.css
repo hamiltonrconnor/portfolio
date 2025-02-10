@@ -18,6 +18,36 @@
     border-radius: 81% 19% 84% 16% / 25% 81% 19% 75%
 }
 
+.boiling-phase-1 {
+    animation-name: boiling-phase-1;
+    animation-duration: 0.5s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+
+}
+
+.boiling-phase-2 {
+    animation-name: boiling-phase-1;
+    animation-duration: 0.5s;
+    animation-delay: 0.25s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes boiling-phase-1 {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes boiling-phase-2 {
+    50% {
+        opacity: 0;
+    }
+
+}
 
 
 @keyframes warp {

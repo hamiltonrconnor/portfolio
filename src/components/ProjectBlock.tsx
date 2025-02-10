@@ -31,7 +31,7 @@ const ProjectBlock = (props: Props) => {
 
                     </div>
                 </div>
-                <div className="absolute inset-0  w-64 lg:w-full h-64 ">
+                <div className="absolute inset-0  w-64 lg:w-full h-64 " >
                     <div className={(props.left_side ? "flex-row " : "flex-row-reverse ") + "rounded-3xl " + " w-64 lg:w-full   flex justfy-end justify-between h-64  z-10"}>
 
                         <div className={(props.left_side ? "border-r-0 lg:border-r-3 " : "border-r-0 lg:border-l-3 ") + "w-64 flex-none  border-cream  "}>
@@ -45,7 +45,7 @@ const ProjectBlock = (props: Props) => {
                             </div>
                         </div>
 
-                        <div className={"grow text-md font-semibold text-stone-600 ease-in hidden lg:block  px-3 "} >
+                        <div className={(props.left_side ? " rounded rounded-r-2xl" : " rounded rounded-l-2xl") + "  grow text-md  fornt-semi-bold text-stone-600 ease-in hidden lg:block px-3  " + props.bg_color} >
                             {props.children}
 
                         </div>

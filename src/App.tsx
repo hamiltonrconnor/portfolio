@@ -11,6 +11,7 @@ import Title from './components/Title'
 // import NavBar from './components/NavBar';
 import TopBar from './components/TopBar';
 import ProjectBlock from './components/ProjectBlock';
+import TitleAnimation from "./components/TitleAnimation";
 
 // import { Category } from './assets/data';
 
@@ -24,6 +25,7 @@ import { useRef } from "react";
 import AltBlock from './components/AltBlock';
 
 import useWindowDimensions from './utilities/useWindowDimensions'
+import Circle from "./components/shapes";
 
 
 function App() {
@@ -70,6 +72,7 @@ function App() {
 
               <section >
                 <div className=''>
+
                   <Title title="Hi, I'm Connor  Hamilton!" sub_title="A PhD student in HCI" />
                   <div className=' flex  flex-row-reverse'>
                     <div className='custom-border p-4'>
@@ -110,13 +113,13 @@ function App() {
               </section>
               <ol className=' relative mx-8 border-l-4 border-stone-300 '>
                 <li>
-                  <div className='absolute mt-4 w-4 h-4 bg-stone-400 rounded-full -translate-x-2.5' ></div>
+                  <div className='absolute mt-4 w-4 h-4 rounded-full -translate-x-[21px] -translate-y-3 stroke-stone-600 fill-stone-300 '><Circle></Circle></div>
                   <AltBlock company='Wearables for Physiotherapy' job_title='PhD Position' dates="April 2024 to March 2025" skills={["Python"]}>
                     <p>Rehabilitation devices are dominated by one-size-fits-all systems that fail to provide the level of customisation required to meet patients’ needs. Working with physiotherapists, I am using flexible 3D printing to build wearable systems. This allows the creation of bespoke devices tailored to the individual needs of the clinician and patients.</p>
                   </AltBlock>
                 </li>
                 <li>
-                  <div className='absolute mt-4 w-4 h-4 bg-stone-300 rounded-full -translate-x-2.5' ></div>
+                  <div className='absolute mt-4 w-4 h-4 rounded-full -translate-x-[21px] -translate-y-3 fill-stone-300  '><Circle></Circle></div>
                   <AltBlock company=' Spark Data Systems' job_title='Junior Software Developer' dates="October 2023 to March 2024" skills={[".Net", "T-SQL", "Azure Cloud Computing"]}>
                     Spark Data System specialises in the maintenance and replacement of legacy systems across the insurance, hospitality and public service sectors. Key achievements from this role:
                     <ul className="list-disc list-outside mx-4 ">
@@ -127,7 +130,8 @@ function App() {
                   </AltBlock>
                 </li>
                 <li>
-                  <div className='absolute mt-4 w-4 h-4 bg-stone-300 rounded-full -translate-x-2.5' ></div>
+                  <div className='absolute mt-4 w-4 h-4 rounded-full -translate-x-[21px] -translate-y-3 fill-stone-300 '><Circle></Circle></div>
+
                   <AltBlock company='Barclays Bank' job_title='Technology Developer Intern' dates="July 2021 to September 2021" skills={["Java", "Springboot"]}>
                     Barclays wanted to allow users to manage subscription services on their existing app using 3rd party organisation Zuora service. I worked within the team, building an API gateway enabling integration to the Barclays micro service architecture. Two problems I solved were:
                     <ul className="list-disc list-outside mx-4">
@@ -174,7 +178,9 @@ function App() {
 
                 </Block>
               </div> */}
+
               <div className='px-8 flex flex-row flex-wrap gap-4 justify-center'>
+
 
                 <ProjectBlock mask="mask1" title="BirdGang" sub_tile='Group Games Project' skills={["C#", "Unity", "Github Actions"]} bg_color="bg-pastel-blue" bg_color_plus="bg-blue-500" left_side={true}>
                   <p className='font-quicksand pt-2'>Developed a 3D browser based game using the Unity game engine. Resulting in a 1st class mark and feedback that the project was “judged as outstanding by the panel entering truly professional territory”.

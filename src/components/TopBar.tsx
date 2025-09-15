@@ -3,14 +3,21 @@
 import { motion } from "motion/react"
 import { useState } from "react";
 
-
-type Props = {
+type TopBarProps = {
 
     aboutSection: React.MutableRefObject<HTMLElement | null>
     projectSection: React.MutableRefObject<HTMLElement | null>
     experinceSection: React.MutableRefObject<HTMLElement | null>
-    isHambergerToggled: Boolean
+
 }
+type ElementsProps = { isHambergerToggled: Boolean }
+type TopBarElementsProps = TopBarProps & ElementsProps
+
+
+
+
+
+
 
 interface HambergerProps {
     onToggle: () => void;
@@ -33,7 +40,7 @@ const Hamburger = ({ onToggle }: HambergerProps) => {
 
 }
 
-const TopBarElements = ({ aboutSection, projectSection, experinceSection, isHambergerToggled }: Props) => {
+const Elements = ({ aboutSection, projectSection, experinceSection, isHambergerToggled }: TopBarElementsProps) => {
 
     const buttionMotion = {
         hover: {
@@ -92,7 +99,7 @@ const TopBarElements = ({ aboutSection, projectSection, experinceSection, isHamb
 
 
 
-const TopBar = ({ aboutSection, projectSection, experinceSection }: Props) => {
+const TopBar = ({ aboutSection, projectSection, experinceSection }: TopBarProps) => {
 
 
 
@@ -111,7 +118,7 @@ const TopBar = ({ aboutSection, projectSection, experinceSection }: Props) => {
             <nav className="px-4 py-2 m-2 flex flex-col ">
 
                 <Hamburger onToggle={handleHambergerToggle} />
-                <TopBarElements aboutSection={aboutSection} projectSection={projectSection} experinceSection={experinceSection} isHambergerToggled={isHambergerToggled} />
+                <Elements aboutSection={aboutSection} projectSection={projectSection} experinceSection={experinceSection} isHambergerToggled={isHambergerToggled} />
 
 
             </nav >

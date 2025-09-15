@@ -73,7 +73,7 @@ function App() {
               <section >
                 <div className=''>
 
-                  <Title title="Hi, I'm Connor  Hamilton!" sub_title="A PhD student in HCI" />
+                  <Title title="Hi, I'm Connor  Hamilton!" sub_title="Junior Software Developer" />
                   <div className=' flex  flex-row-reverse'>
                     <div className='custom-border p-4'>
                       <img className="m-10 border-4 custom-border border-slate-900  drop-shadow-hard object-cover h-64 w-64" src='docs/assets/images/HeadShot.jpeg'></img>
@@ -93,7 +93,7 @@ function App() {
               <div className="px-5 flex max-w-fit gap-5 justify-between">
                 <div className='w-1/2 flex flex-col justify-between'>
 
-                  <p className='p-2  text-stone-600 font-quicksand lg:text-3xl  md:text-2xl sm:text-xl dark:text-white'>I am a PhD Student at the University of Canterbury.  I graduated from the University of Bristol having achieved a First Class Master of Engineering in Computer Science.</p>
+                  <p className='p-2  text-stone-600 font-quicksand lg:text-3xl  md:text-2xl sm:text-xl dark:text-white'>Junior Software Developer with a First Class Master of Computer Science from a Top UK university. Seeking full-time opportunities to build software that makes a difference.</p>
                   <div className='w-full flex flex-row items-center p-1'>
                     <img className="flex-1  w-1/3 p-1" src='docs/assets/images/UniOfCanterbury_Logo.png'></img>
                     <img className="flex-1  w-1/3 p-1" src='docs/assets/images/University_of_Bristol_logo.svg.png'></img>
@@ -114,18 +114,30 @@ function App() {
               <ol className=' relative mx-8 border-l-4 border-stone-300 '>
                 <li>
                   <div className='absolute mt-4 w-4 h-4 rounded-full -translate-x-[21px] -translate-y-3 stroke-stone-600 fill-stone-300 '><Circle></Circle></div>
-                  <AltBlock company='Wearables for Physiotherapy' job_title='PhD Position' dates="April 2024 to March 2025" skills={["Python"]}>
-                    <p>Rehabilitation devices are dominated by one-size-fits-all systems that fail to provide the level of customisation required to meet patients’ needs. Working with physiotherapists, I am using flexible 3D printing to build wearable systems. This allows the creation of bespoke devices tailored to the individual needs of the clinician and patients.</p>
+                  <AltBlock company='University of Canterbury' job_title='Postgraduate Researcher' dates="March 2024 to March 2025" skills={["Python"]}>
+                    <ul className="list-disc list-outside mx-4 ">
+                      <li>Led a PhD project designing wearable rehab devices with seven physiotherapists to understand patient and clinician needs. </li>
+                      <li>Developed a prototype shoulder brace using flexible 3D Printing with patient-specific motion limits, by converting non-technical requirements into functional, iterative prototypes, enabling greater freedom in safe directions while restricting harmful movements.</li>
+                    </ul>
                   </AltBlock>
                 </li>
                 <li>
                   <div className='absolute mt-4 w-4 h-4 rounded-full -translate-x-[21px] -translate-y-3 fill-stone-300  '><Circle></Circle></div>
-                  <AltBlock company=' Spark Data Systems' job_title='Junior Software Developer' dates="October 2023 to March 2024" skills={[".Net", "T-SQL", "Azure Cloud Computing"]}>
-                    Spark Data System specialises in the maintenance and replacement of legacy systems across the insurance, hospitality and public service sectors. Key achievements from this role:
+                  <AltBlock company='Spark Data Systems' job_title='Junior Software Developer' dates="October 2023 to March 2024" skills={[".Net", "T-SQL", "Azure Cloud Computing"]}>
                     <ul className="list-disc list-outside mx-4 ">
-                      <li>Developed full stack browser based applications using both the modern .NET 8 Blazor framework and legacy ASP.NET WebForms.</li>
-                      <li>Built normalised T-SQL databases.</li>
-                      <li>Deployed applications with Azure Pipelines to Azure Cloud Computing Services.</li>
+                      <li>Developed full stack browser based applications using both the modern .NET 8 Blazor framework and legacy ASP.NET WebForms, with normalised T-SQL databases.</li>
+                      <li> Deployed applications with Azure Pipelines to Azure Cloud Computing Services.</li>
+                      <li>Took on the leadership of Junior Developer daily standups to foster shared learning.</li>
+                    </ul>
+                  </AltBlock>
+                </li>
+                <li>
+                  <div className='absolute mt-4 w-4 h-4 rounded-full -translate-x-[21px] -translate-y-3 fill-stone-300  '><Circle></Circle></div>
+                  <AltBlock company='Freelance' job_title='Creative Technologist' dates="May 2023 to September 2023" skills={[]}>
+                    <ul className="list-disc list-outside mx-4 ">
+                      <li>Built pneumatic valve systems for six 3m-tall inflatable robots exhibited in Bristol’s Playable Cities program (AirGiants).</li>
+                      <li>Facilitated user playtesting sessions to gather user feedback, and support iterative improvements to the interaction design (AirGiants). </li>
+                      <li>Co-developed an interactive bus stop installation to promote commuter engagement during a Make Shift Creative Camp residency (Pervasive Media Studio).</li>
                     </ul>
                   </AltBlock>
                 </li>

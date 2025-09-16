@@ -95,8 +95,8 @@ function App() {
 
                   <p className='p-2  text-stone-600 font-quicksand lg:text-3xl  md:text-2xl sm:text-xl dark:text-white'>Junior Software Developer with a First Class Master of Computer Science from a Top UK university. Seeking full-time opportunities to build software that makes a difference.</p>
                   <div className='w-full flex flex-row items-center p-1'>
-                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/UniOfCanterbury_Logo.avif' alt="Universitiy of Canterbury Logo"></img>
-                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/University_of_Bristol_logo.avif' alt="Universitiy of Bristol Logo"></img>
+                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/UniOfCanterbury_Logo.avif' alt="University of Canterbury Logo"></img>
+                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/University_of_Bristol_logo.avif' alt="University of Bristol Logo"></img>
                     <img className="flex-1  w-1/3 p-1" src='docs/assets/images/FabLab_Logo.avif' alt="Fablab Logo"></img>
 
                   </div>

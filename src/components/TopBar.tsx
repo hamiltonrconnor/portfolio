@@ -1,6 +1,6 @@
 
 
-import { motion } from "motion/react"
+
 import { useState } from "react";
 
 type TopBarProps = {
@@ -56,7 +56,7 @@ const Elements = ({ aboutSection, projectSection, experinceSection, isHambergerT
         <div id="targetEl" className={(isHambergerToggled ? "" : "hidden w-full md:block md:w-auto ")} >
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:justify-end md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                    <motion.div variants={buttionMotion} onClick={() => {
+                    <div onClick={() => {
                         aboutSection.current?.scrollIntoView({ behavior: 'smooth' });
                     }
                     } className="flex flex-row justify-end">
@@ -67,10 +67,10 @@ const Elements = ({ aboutSection, projectSection, experinceSection, isHambergerT
                             About Me
 
                         </div>
-                    </motion.div>
+                    </div>
                 </li>
                 <li>
-                    <motion.div variants={buttionMotion} onClick={() => {
+                    <div onClick={() => {
                         window.scrollTo({ top: experinceSection.current?.getBoundingClientRect().top, behavior: "smooth" })
                     }} className="flex flex-row justify-end">
                         <div className="text-stone-600 hover:text-stone-400 py-2 px-4 text-3xl font-extrabold font-vergil  ">
@@ -78,10 +78,10 @@ const Elements = ({ aboutSection, projectSection, experinceSection, isHambergerT
 
                         </div>
 
-                    </motion.div>
+                    </div>
                 </li>
                 <li>
-                    <motion.div variants={buttionMotion} onClick={() => {
+                    <div onClick={() => {
                         window.scrollTo({ top: projectSection.current?.getBoundingClientRect().top, behavior: "smooth" })
                     }} className="flex flex-row justify-end">
                         <div className="text-stone-600 hover:text-stone-400 py-2 px-4 text-3xl font-extrabold font-vergil  ">
@@ -89,7 +89,7 @@ const Elements = ({ aboutSection, projectSection, experinceSection, isHambergerT
 
                         </div>
 
-                    </motion.div>
+                    </div>
                 </li>
 
             </ul >

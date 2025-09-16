@@ -157,8 +157,8 @@ function App() {
               </ol>
 
 
-              <h1 className='p-8 font-vergil text-2xl'>For further details checkout my CV
-                < a className="text-sky-500 hover:text-sky-300" href={Pdf} rel="noopener noreferrer" target="_blank"> here</a>.
+              <h1 className='p-8 font-vergil text-2xl'>For further details checkout
+                < a className="text-sky-500 hover:text-sky-300" href={Pdf} rel="noopener noreferrer" target="_blank"> my CV</a>.
               </h1>
 
               <section ref={projectSection} id={"Projects"} >

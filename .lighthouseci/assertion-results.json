@@ -1,0 +1,18 @@
+[
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.81,
+    "values": [
+      0.79,
+      0.79,
+      0.81
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditProperty": "performance",
+    "auditId": "categories",
+    "level": "error",
+    "url": "https://hamiltonrconnor.github.io/portfolio/"
+  }
+]

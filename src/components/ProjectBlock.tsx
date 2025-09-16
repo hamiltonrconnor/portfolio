@@ -39,7 +39,7 @@ const ProjectBlock = (props: Props) => {
                             <h1 className="px-4  text-stone-600 text-lg ">{props.sub_tile}</h1>
 
                             <div className=" px-4 flex flex-row  flex-wrap  gap-x-2 pr-8 py-2">
-                                {props.skills.map((item) => (<div className="font-quicksand bg-white px-2 border-2 border-gray-900 rounded my-1 ">{item}</div>))}
+                                {props.skills.map((item, index) => (<div key={index} className="font-quicksand bg-white px-2 border-2 border-gray-900 rounded my-1 ">{item}</div>))}
 
 
                             </div>

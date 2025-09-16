@@ -1,8 +1,8 @@
-import { motion, useTime } from "motion/react"
-import { useEffect, useState } from "react"
+import { motion } from "motion/react"
+// import { useEffect, useState } from "react"
 
 const TitleAnimation = () => {
-    const images = ["Hi-frame0.svg", "Hi-frame1.svg", "Hi-frame2.svg", "Hi-frame3.svg"]
+    // const images = ["Hi-frame0.svg", "Hi-frame1.svg", "Hi-frame2.svg", "Hi-frame3.svg"]
 
 
     return (

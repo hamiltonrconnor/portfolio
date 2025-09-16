@@ -76,7 +76,7 @@ function App() {
                   <Title title="Hi, I'm Connor  Hamilton!" sub_title="Junior Software Developer" />
                   <div className=' flex  flex-row-reverse'>
                     <div className='custom-border p-4'>
-                      <img className="m-10 border-4 custom-border border-slate-900  drop-shadow-hard object-cover h-64 w-64" src='docs/assets/images/HeadShot.jpeg'></img>
+                      <img className="m-10 border-4 custom-border border-slate-900  drop-shadow-hard object-cover h-64 w-64" src='docs/assets/images/HeadShot.avif'></img>
                     </div>
                   </div>
                   <div>
@@ -95,9 +95,9 @@ function App() {
 
                   <p className='p-2  text-stone-600 font-quicksand lg:text-3xl  md:text-2xl sm:text-xl dark:text-white'>Junior Software Developer with a First Class Master of Computer Science from a Top UK university. Seeking full-time opportunities to build software that makes a difference.</p>
                   <div className='w-full flex flex-row items-center p-1'>
-                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/UniOfCanterbury_Logo.png'></img>
-                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/University_of_Bristol_logo.svg.png'></img>
-                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/FabLab_Logo.png'></img>
+                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/UniOfCanterbury_Logo.avif'></img>
+                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/University_of_Bristol_logo.avif'></img>
+                    <img className="flex-1  w-1/3 p-1" src='docs/assets/images/FabLab_Logo.avif'></img>
 
                   </div>
                 </div>

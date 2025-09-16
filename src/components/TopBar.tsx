@@ -42,14 +42,7 @@ const Hamburger = ({ onToggle }: HambergerProps) => {
 
 const Elements = ({ aboutSection, projectSection, experinceSection, isHambergerToggled }: TopBarElementsProps) => {
 
-    const buttionMotion = {
-        hover: {
 
-            scale: 1.1,
-            transition: { duration: 0.5 },
-
-        }
-    }
 
 
     return (

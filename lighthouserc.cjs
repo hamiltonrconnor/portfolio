@@ -1,7 +1,7 @@
 module.exports = {
     ci: {
         collect: {
-            url: ['http://localhost:5173/portfolio/'],
+            url: ['http://hamiltonrconnor.github.io/portfolio/'],
             numberOfRuns: 3,
             settings: {
                 chromeFlags: '--no-sandbox',

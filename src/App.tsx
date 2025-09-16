@@ -106,7 +106,7 @@ function App() {
 
                 <div className='w-1/2 p-auto'>
 
-                  <img loading="lazy" className="font-vergil grow-0 object-contain" src="docs/assets/images/3Dprinter_converted.avif" alt="Drawing of 3D Printer"></img>
+                  <img loading="lazy" className="font-vergil grow-0 object-contain" src="docs/assets/images/3dprinter_converted.avif" alt="Drawing of 3D Printer"></img>
                 </div>
               </div>
               <section ref={experienceSection} id={"Experience"} >

@@ -76,7 +76,8 @@ function App() {
                   <Title title="Hi, I'm Connor  Hamilton!" sub_title="Junior Software Developer" />
                   <div className=' flex  flex-row-reverse'>
                     <div className='custom-border p-4'>
-                      <img className="m-10 border-4 custom-border border-slate-900  drop-shadow-hard object-cover h-64 w-64" src='docs/assets/images/HeadShot.avif' alt="Headshot of Connor Hamilton"></img>
+
+                      <img className="m-10 border-4 custom-border border-slate-900  drop-shadow-hard object-cover h-64 w-64" src='docs/assets/images/HeadShot_converted.avif' alt="Headshot of Connor Hamilton"></img>
                     </div>
                   </div>
                   <div>
@@ -105,7 +106,7 @@ function App() {
 
                 <div className='w-1/2 p-auto'>
 
-                  <img loading="lazy" className="font-vergil grow-0 object-contain" src="docs/assets/images/3Dprinter.avif" alt="Drawing of 3D Printer"></img>
+                  <img loading="lazy" className="font-vergil grow-0 object-contain" src="docs/assets/images/3Dprinter_converted.avif" alt="Drawing of 3D Printer"></img>
                 </div>
               </div>
               <section ref={experienceSection} id={"Experience"} >

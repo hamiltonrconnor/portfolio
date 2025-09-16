@@ -31,10 +31,10 @@ const AltBlock = (props: Props) => {
                         {showResults ?
 
                             <svg className="w-2.5 h-2.5 -scale-100 stroke-current" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10">
-                                <path stroke="#57534E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 4 4 4 4-4" />
+                                <path stroke="#57534E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 4 4 4 4-4" />
                             </svg> :
                             <svg className="w-2.5 h-2.5 stroke-current" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="#57534E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                <path stroke="#57534E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                             </svg>
 
                         }
@@ -48,7 +48,7 @@ const AltBlock = (props: Props) => {
 
 
                 <div className="flex flex-row  flex-wrap  gap-x-2 pr-8 py-2">
-                    {props.skills.map((item) => (<div className="font-quicksand bg-white px-2 border-2 border-gray-900 rounded my-1 ">{item}</div>))}
+                    {props.skills.map((item, index) => (<div key={index} className="font-quicksand bg-white px-2 border-2 border-gray-900 rounded my-1 " > {item}</div>))}
 
 
                 </div>

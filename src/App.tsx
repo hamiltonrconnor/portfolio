@@ -11,7 +11,7 @@ import Title from './components/Title'
 // import NavBar from './components/NavBar';
 import TopBar from './components/TopBar';
 import ProjectBlock from './components/ProjectBlock';
-import TitleAnimation from "./components/TitleAnimation";
+// import TitleAnimation from "./components/TitleAnimation";
 
 // import { Category } from './assets/data';
 
@@ -25,7 +25,7 @@ import { useRef } from "react";
 import AltBlock from './components/AltBlock';
 
 import useWindowDimensions from './utilities/useWindowDimensions'
-import Circle from "./components/shapes";
+import Circle from "./components/Shapes";
 
 
 function App() {

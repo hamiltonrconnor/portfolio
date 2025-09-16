@@ -105,7 +105,7 @@ function App() {
 
                 <div className='w-1/2 p-auto'>
 
-                  <img className="font-vergil grow-0 object-contain" src="docs/assets/images/3Dprinter.svg"></img>
+                  <img className="font-vergil grow-0 object-contain" src="docs/assets/images/3Dprinter.avif"></img>
                 </div>
               </div>
               <section ref={experienceSection} id={"Experience"} >

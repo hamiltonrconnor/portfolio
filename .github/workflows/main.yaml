@@ -6,9 +6,9 @@ on:
       - main
 
 jobs:
-  lighthouseci:
+  performance-audit:
     runs-on: ubuntu-latest
-    needs: deploy
+    needs: build
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -48,7 +48,7 @@ jobs:
 
   deploy:
     name: Deploy
-    needs: build
+    needs: performance-audit
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 

@@ -2,8 +2,8 @@ module.exports = {
     ci: {
         collect: {
             startServerCommand: "npm run preview",
-            startServerReadyPattern: "Local:.*http",
-            url: ['http://localhost:4174/portfolio/'],
+            startServerReadyPattern: "/Local:\s+http:\/\/localhost:4173/i",
+            url: ['http://localhost:4173/portfolio/'],
             numberOfRuns: 3,
             settings: {
                 chromeFlags: '--no-sandbox',
